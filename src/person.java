@@ -9,7 +9,7 @@ public class person {
 
     }
     public void display(){
-        System.out.print("Name: "+this.name+" Age: "+this.age+" RegNo: " + "--->");
+        System.out.print("Name: "+this.name+" Age: "+this.age+ "--->");
     }
 
 }

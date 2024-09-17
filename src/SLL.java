@@ -42,6 +42,25 @@ public class SLL {
         return false;
     }
 
+    public void insertAtPosition(person data,int pos){
+        Node newNode = new Node(data);
 
+        if(pos == 1){
+            newNode.next = head;
+            head = newNode;
+            return;
+        }
+        else{
+            Node current = head;
+            int count = 0;
+
+            while(current.next != null && count < pos-1){
+                current = current.next;
+                ++count;
+            }
+            newNode.next = current.next;
+            current.next = newNode;
+        }
+    }
 
     }
